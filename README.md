@@ -3,4 +3,7 @@
 
 [Articles](/articles)
 
+[Articles](/articles.md)
+[Articles](/article)
+
 
