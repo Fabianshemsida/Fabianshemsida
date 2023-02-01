@@ -20,5 +20,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   console.log("head-custom.html")
 </script>
 <script>
-function sendReadEvent(title, readTime) {    gtag('event', 'Read_article', {        "title_article": title,        "read_time": readTime,    });}
+function sendReadEvent(title, readTime) {   
+  gtag('event', 'Read_article', {      
+    "title_article": title,      
+    "read_time": readTime,  
+  });}
+  
+  document.addEventListener("DOMContentLoaded", () => {   
+    const readArticle1Button = document.getElementById("article_1");    
+    if (readArticle1Button) {  
+      
+      // Skickar event vid klick på artikel 1
+      readArticle1Button.addEventListener("click", () => {           
+        sendReadEvent("Fabians Inlämning 1", 7,)       
+      });       
+      
+      // Skickar event vid klick på artikel 2      
+      document.getElementById("article_2").addEventListener("click", () => {        
+        sendReadEvent("Fabians Inlämning 2", 20, )     
+      });       
+      
+      // Skickar event vid klick på artikel 3        
+      document.getElementById("article_3").addEventListener("click", () => {         
+        sendReadEvent("Fabians Inlämning 3", 16,)       
+      });    
+  }});
 </script>
