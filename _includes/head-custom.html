@@ -21,7 +21,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 
 <script>
-function sendReadingTime(Artikelnamn, Readtimee){
+function sendReadTime(Artikelnamn, Readtimee){
    gtag('event','last_artikel', {
    "Artikelnamn": Artikelnamn,
    "Readtimee": Readtimee,  
@@ -33,17 +33,17 @@ function sendReadingTime(Artikelnamn, Readtimee){
       
       // Skickar event vid klick på artikel 1
       readReadArticle1.addEventListener("click", () => {           
-        sendReadEvent("Fabians Inlämning 1", 7,)       
+        sendReadTime("Fabians Inlämning 1", 7,)       
       });       
       
       // Skickar event vid klick på artikel 2      
       document.getElementById("read-article-2").addEventListener("click", () => {        
-        sendReadEvent("Fabians Inlämning 2", 20, )     
+        sendReadTime("Fabians Inlämning 2", 20, )     
       });       
       
       // Skickar event vid klick på artikel 3        
       document.getElementById("read-article-3").addEventListener("click", () => {         
-        sendReadEvent("Fabians Inlämning 3", 16,)       
+        sendReadTime("Fabians Inlämning 3", 16,)       
       });    
   }});
   
