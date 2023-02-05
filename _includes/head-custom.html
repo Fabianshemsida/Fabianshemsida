@@ -20,10 +20,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   console.log("head-custom.html")
 </script>
 <script>
-function sendReadEvent(title, readTime) {   
-  gtag('event', 'Read_article', {      
-    "title_article": title,      
-    "read_time": readTime,  
+function sendReadingTime(Artikelnamn, Readtimee){
+   gtag('event','last_artikel', {
+   "artikelnamn": Artikelnamn,
+   "Readtimee": Readtimee,  
   });}
   
   document.addEventListener("DOMContentLoaded", () => {   
