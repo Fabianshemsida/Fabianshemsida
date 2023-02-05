@@ -19,6 +19,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script>
   console.log("head-custom.html")
 </script>
+
 <script>
 function sendReadingTime(Artikelnamn, Readtimee){
    gtag('event','last_artikel', {
@@ -27,25 +28,24 @@ function sendReadingTime(Artikelnamn, Readtimee){
   });}
   
   document.addEventListener("DOMContentLoaded", () => {   
-    const readKnapp1 = document.getElementById("knapp_1");    
-    if (readKnapp1) {  
+    const readReadArticle1 = document.getElementById("read-article-1");    
+    if (readReadArticle1) {  
       
       // Skickar event vid klick på artikel 1
-      readKnapp1.addEventListener("click", () => {           
+      readReadArticle1.addEventListener("click", () => {           
         sendReadEvent("Fabians Inlämning 1", 7,)       
       });       
       
       // Skickar event vid klick på artikel 2      
-      document.getElementById("knapp_2").addEventListener("click", () => {        
+      document.getElementById("read-article-2").addEventListener("click", () => {        
         sendReadEvent("Fabians Inlämning 2", 20, )     
       });       
       
       // Skickar event vid klick på artikel 3        
-      document.getElementById("article_3").addEventListener("click", () => {         
+      document.getElementById("read-article-3").addEventListener("click", () => {         
         sendReadEvent("Fabians Inlämning 3", 16,)       
       });    
   }});
   
-  console.log("20230205")
   
 </script>
