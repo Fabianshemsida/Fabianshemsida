@@ -27,16 +27,16 @@ function sendReadingTime(Artikelnamn, Readtimee){
   });}
   
   document.addEventListener("DOMContentLoaded", () => {   
-    const readArticle1Button = document.getElementById("article_1");    
-    if (readArticle1Button) {  
+    const readKnapp1 = document.getElementById("knapp_1");    
+    if (readKnapp1) {  
       
       // Skickar event vid klick på artikel 1
-      readArticle1Button.addEventListener("click", () => {           
+      readKnapp1.addEventListener("click", () => {           
         sendReadEvent("Fabians Inlämning 1", 7,)       
       });       
       
       // Skickar event vid klick på artikel 2      
-      document.getElementById("article_2").addEventListener("click", () => {        
+      document.getElementById("knapp_2").addEventListener("click", () => {        
         sendReadEvent("Fabians Inlämning 2", 20, )     
       });       
       
@@ -45,4 +45,7 @@ function sendReadingTime(Artikelnamn, Readtimee){
         sendReadEvent("Fabians Inlämning 3", 16,)       
       });    
   }});
+  
+  console.log("20230205")
+  
 </script>
